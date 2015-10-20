@@ -16,15 +16,16 @@ type
     fLiczbaWidzow, fDataUtworzeniaKonta, fLiczbaSledzacych, fNazwaKanalu, fDataAktualizacjiKanalu, fURL, fOpisKanalu, fLiczbaOdwiedzin,
       fKraj, fWyswietlanaNazwaKanalu, fCzasStrumieniowania, fID, fProgram, fFPS, fRozdzialka: array of String;
     fListView: TlistView;
-    fBazaDanych: TStringList;
+    fBazaDanych: TStringList; //Database
     fProgressBar: TProgressBar;
     fTrayIcon: TTrayIcon;
     // fPomiarCzasuPobrania, fPomiarCzasuReszty: TStopWatch;
     // fRozmiar: String;
-    fSortujWgProgramu: boolean;
-    fJezyk: integer;
+    fSortujWgProgramu: boolean; // Sort by program
+    fJezyk: integer; // language
     // fHinty : array of string;
     // function PobierzHinty(indeks: integer): string;
+    { ---------------- Review Line ----------------------------}
     function PobierzInformacjeTwitchAPI: boolean;
     procedure AktualizaujListView;
     function SnipealotRasaGracza(const bonjwa: string): integer;
